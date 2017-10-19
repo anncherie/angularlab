@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+
+</script>
+
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+<img src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-5.jpg" 
+height = "100" width = "100" ng-mousemove="count = count + 1" ng-mouseleave="myfunc()">
+
+<h2>{{ count }}</h2>
+
+
+</div>
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.count = 0;
+    $scope.myfunc = function() {
+
+    if ($scope.count < 50){
+    alert("That's all you got?");
+    }
+    else if ($scope.count >= 50 && $scope.count < 150){
+        alert("Why did you stop? That felt so good.");
+    }
+    else if ($scope.count >= 150 && $scope.count < 300){
+        alert("Keep going...");
+    }
+    else if ($scope.count >= 300 && $scope.count < 600){
+        alert("Ohhh yeaaahhhhhh...");
+    }
+    else if ($scope.count > 600){
+        alert("That's enough, please stop.");
+     }
+    $scope.count = 0;
+    }
+    
+});
+</script> 
+
+</body>
+</html>
