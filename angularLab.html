@@ -8,13 +8,15 @@
 
 <div ng-app="myApp" ng-controller="myCtrl">
 
-<img src="http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-5.jpg" 
-height = "100" width = "100" ng-mousemove="count = count + 1" ng-mouseleave="myfunc()">
+    <div id ="mousemove">
+        <img id="kanyehead" src="https://www.virginchan.org/boards/b/image/1387/88/13878869813436.png" alt="kanyehead" ng-mousemove = "count = count + 1" ng-mousemove = "mousemove()" ng-mouseleave = "myfunc()"> 
+    </div>  
 
 <h2>{{ count }}</h2>
 
 
 </div>
+
 <script>
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
@@ -38,7 +40,30 @@ app.controller('myCtrl', function($scope) {
      }
     $scope.count = 0;
     }
-    
+
+    const shakeDiv = document.getElementById('mousemove');
+
+// let song = 0;
+//     function getSong() {
+//         song = (song%16) + 1
+//         if(song > 15){
+//             song = 1;
+//         }
+//         return `kanye${song}.m4a`;
+//     }
+
+    $scope.mousemove = function() {
+        shakeDiv.className = 'mousemove';
+        
+
+        // var audio = new Audio(getSong());
+        // audio.onended = function() {
+            
+            shakeDiv.className = '';
+        // }
+        // audio.play();
+
+    } 
 });
 </script> 
 
