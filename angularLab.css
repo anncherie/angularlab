@@ -5,10 +5,7 @@
 
 }
 
-
-
-
-#shake.mousemove
+#shake.click
 {
 	-webkit-animation-name: shakeelement;
 	-webkit-animation-duration: 400ms;
@@ -16,6 +13,12 @@
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 }
+#shake{
+	width: 15%;
+	margin-left: 42%;
+	margin-right: 42%;
+}
+
 
 	h1{
 		align-content: center;
@@ -30,16 +33,16 @@
 		display: block;
 		margin-right: auto;
 		margin-left: auto;
-		margin-top: 15%;
-		margin-bottom: 10%;
-		width: 20%;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 100%;
 	}
 	#facebutton{
 		background-color: #f58b57;
 	}
 	#instructions{
 		text-align: center;
-		font-size: 120px;
+		font-size: 60px;
 
 	}
 	p{
@@ -47,8 +50,8 @@
 
 	}
 	body{
-			background-image: url("kanyeAngLabBack.png");
+			background-image: url("KanyeBack.png");
 			background-repeat: no-repeat;
 			background-position: center top;
-			background-size: 100% 170%;
+			background-size: 100% 120%;
 	}
