@@ -38,19 +38,19 @@ app.controller('myCtrl', function($scope) {
     $scope.myfunc = function() {
         console.log("myfunc");
     if ($scope.count < 50){
-    alert("That's all you got?");
+    alert("Kanye says: \n That's all you got?");
     }
     else if ($scope.count >= 50 && $scope.count < 150){
-        alert("Why did you stop? That felt so good.");
+        alert("Kanye says: \n Why did you stop? That felt so good.");
     }
     else if ($scope.count >= 150 && $scope.count < 300){
-        alert("Keep going...");
+        alert("Kanye says: \n Keep going...");
     }
     else if ($scope.count >= 300 && $scope.count < 600){
-        alert("Ohhh yeaaahhhhhh...");
+        alert("Kanye says: \n Ohhh yeaaahhhhhh...");
     }
     else if ($scope.count > 600){
-        alert("That's enough, please stop.");
+        alert("Kanye says: \n That's enough, please stop.");
      }
     $scope.count = 0;
     }
